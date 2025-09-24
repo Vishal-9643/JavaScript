@@ -40,6 +40,17 @@ console.log(myarr);
 console.log(n2);
 
 
+const A1 = [1, 2, 3, 4];
+const A2 = [5, 6, 7, 8];
+
+const A = A1.concat(A2) // concat used to add two or more array and return new array.
+console.log(A);
+
+const A3 = [...A1, ...A2] // adding two aaray by spread.
+console.log(A3);
+
+
+
 
 
 
