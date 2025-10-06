@@ -33,6 +33,10 @@
     const text = document.createTextNode("VISHAL PRAJAPATI");  // text node created
     div.appendChild(text) // adding text into div.
 
-    document.body.appendChild(div) // adding div into document.       
+    document.body.appendChild(div) // adding div into document. 
+    
+    // Edit element 
+    const day = document.querySelector('.parent').children[3];
+    day.outerHTML = "<div>Saturday</div>"
 </script>
 </html>
