@@ -1,0 +1,52 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    
+}
+button{
+    padding: 10px 20px;
+    border: 1px solid gray;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+span {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+.hero {
+  margin: 100px auto 100px;
+  width: 80%;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+.button {
+  width: 100px;
+  height: 100px;
+  border: solid black 2px;
+  display: inline-block;
+}
+
+#grey {
+  background: grey;
+}
+
+#pink {
+  background: pink;
+}
+#violet{
+  background: violet;
+}
+#orange {
+  background: orange;
+}
