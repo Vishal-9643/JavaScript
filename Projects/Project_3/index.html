@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <style>
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: 1px solid black;
+            border-radius: 2px;
+            cursor: pointer;
+            background-color: #fff;
+            font-size: larger;
+        }
+
+        body {
+            background-color: #7e0e0e;
+            color: #fff;
+        }
+
+        .hero {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #clock {
+            font-size: 40px;
+            background-color: orange;
+            padding: 20px 50px;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="/JavaScript/Projects/Project_3/index.html"><button>Home</button></a>
+        <a href="/about"><button>About</button></a>
+        <a href="/contact"><button>Contact</button></a>
+    </nav>
+    <div class="hero">
+        <div id="banner"><span>Your local time</span></div>
+        <div id="clock"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
