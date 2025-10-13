@@ -1,0 +1,43 @@
+body{
+    box-sizing: border-box;
+    background-color: aqua;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+button{
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: #fff;
+    font-size: larger;
+}
+
+.hero {
+  margin: 50px auto 100px;
+  width: 90vw;
+  height: 600px;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  background-color: gray;
+}
+
+#result {
+  font-size: 35px;
+  margin-left: 90px;
+  margin-top: 20px;
+  color: rgb(235, 229, 229);
+}
+input{
+    height: 25px;
+}
+#height,
+#weight {
+  width: 150px;
+  height: 25px;
+  margin-top: 30px;
+}
