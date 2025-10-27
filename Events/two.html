@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Intervals & Timeout</title>
+</head>
+<body>
+    <h1>Learning JavaScript</h1>
+    <button id="start">start</button>
+    <button id="stop">Stop</button>
+    <button id="Stop1">Stop1</button>
+    
+</body>
+<script>
+     // setTimeout takes a function or its reference and time in milli second as a parameter and do work after that time
+    const hello = setTimeout(function(){
+        alert("Hello")
+    },2000)
+
+    function change(){
+        document.querySelector('h1').innerHTML = "JavaScript is cool"
+    }
+    const h1 = setTimeout(change,4000) // here we use function reference.
+    clearTimeout(h1) // it stop the settimeout task.
+
+    // using stop button for stoping alert hello message.
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(hello);
+    })
+
+
+    let interval;
+    // using start button for continous alert notification.
+    document.querySelector('#start').addEventListener('click',function(){
+        interval = setInterval(function(){
+            alert("Hello Vishal");
+            
+        },4000)
+    })
+    // stoping it.
+    document.querySelector('#stop1').addEventListener('click',function(){
+        clearInterval(interval);
+    })
+</script>
+</html>
